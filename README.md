@@ -1,2 +1,0 @@
-# minsungyoon.github.io
-.
