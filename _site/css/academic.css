@@ -4938,6 +4938,16 @@ input[type="button"].btn-block {
     border-radius: .25rem
 }
 
+.card img { /* hover 뒤 애니메이션 */
+    transform: scale(1.0); /* 이미지 확대 */
+    transition: transform .5s; /* 시간 설정 */
+}
+ 
+.card img:hover {    /* hover 시 애니메이션 */
+    transform: scale(1.5);   /* 이미지 확대 */
+    transition: transform .5s;  /* 시간 설정 */
+}
+
 .card>hr {
     margin-right: 0;
     margin-left: 0
