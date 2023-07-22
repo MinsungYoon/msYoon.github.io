@@ -1,4 +1,2 @@
-# msYoon.github.io
-.
-.
+# minsungyoon.github.io
 .
