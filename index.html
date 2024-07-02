@@ -591,7 +591,9 @@
         </div>
     </div>
     
-    <div class="container">
+    <!-- Initially hidden containers -->
+    <div class="additional-content" style="display: none;">
+      <div class="container">
         <div class="row">
             <div class="col-sm-4 my-3">
                 <div class="card">
@@ -618,7 +620,13 @@
                 </div>
             </div>
         </div>
+      </div>
     </div>
+      <!-- Load More Button -->
+    <div class="container text-center">
+          <button class="btn btn-primary" id="loadMore">Load More</button>
+    </div>
+
   
         <!-- <div class="col-sm-4 my-3">
             <div class="card">
@@ -735,7 +743,18 @@
 
   <script src="/js/academic.min.a8d7005002cb4a052fd6d721e83df9ba.js"></script>
 
-
+  <script>
+    document.getElementById('loadMore').addEventListener('click', function() {
+        var additionalContent = document.querySelector('.additional-content');
+        if (additionalContent.style.display === 'none') {
+            additionalContent.style.display = 'block';
+            this.textContent = 'Load Less';
+        } else {
+            additionalContent.style.display = 'none';
+            this.textContent = 'Load More';
+        }
+    });
+  </script>
 
   <div class="container">
     <footer class="site-footer">
