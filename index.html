@@ -635,7 +635,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <div class="container text-center">
         <button class="btn btn-primary" id="loadMore" style="font-size: 18px; padding: 10px 20px; border-radius: 5px; background-color: #000000; color: white; border: none; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);">
-            ∇ More Memories
+            <i class="fas fa-chevron-circle-down"></i> More Memories
         </button>
     </div>
 
@@ -756,14 +756,14 @@
 
   <script>
     document.getElementById('loadMore').addEventListener('click', function() {
-        // var additionalContent = document.querySelector('.additional-content');
-        // if (additionalContent.style.display === 'none') {
-        //     additionalContent.style.display = 'block';
-        //     this.textContent = 'Close';
-        // } else {
-        //     additionalContent.style.display = 'none';
-        //     this.textContent = '∇ More Memories';
-        // }
+        var additionalContent = document.querySelector('.additional-content');
+        if (additionalContent.style.display === 'none') {
+            additionalContent.style.display = 'block';
+            this.textContent = 'Close';
+        } else {
+            additionalContent.style.display = 'none';
+            this.textContent = 'Re-Open';
+        }
     });
   </script>
 
