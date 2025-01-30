@@ -831,7 +831,6 @@
         var additionalContent = document.querySelector('.additional-content');
         if (additionalContent.style.display === 'none') {
             additionalContent.style.display = 'block';
-            this.textContent = 'Fold';
         }
     });
   </script>
@@ -839,6 +838,9 @@
   <script>
     document.getElementById('loadMoreMemory').addEventListener('click', function() {
         var additionalContent = document.querySelector('.additional-content2');
+        if (additionalContent.style.display === 'none') {
+            additionalContent.style.display = 'block';
+        } 
     });
   </script>
 
