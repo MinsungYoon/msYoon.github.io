@@ -670,6 +670,24 @@ pre code {
     padding-left: 0
 }
 
+.news-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.news-list li {
+    display: flex;            /* Put date & text side by side */
+    align-items: flex-start;  /* Top-align if the text wraps to multiple lines */
+    margin-bottom: 0.5em;     /* Spacing between items */
+}
+
+.news-date {
+    width: 70px;              /* Or however wide you want the date column */
+    font-weight: bold;        /* Make the date stand out */
+    margin-right: 8px;        /* Space between date and text */
+}
+
 .col-1,
 .col-2,
 .col-3,
