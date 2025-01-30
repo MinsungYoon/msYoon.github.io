@@ -830,19 +830,25 @@
     document.getElementById('loadMoreNews').addEventListener('click', function() {
         var additionalContent = document.querySelector('.additional-content');
         if (additionalContent.style.display === 'none') {
-            additionalContent.style.display = 'block';
+          additionalContent.remove();
+        // Optionally, remove this button as well if there's nothing left to show
+        this.remove();
         }
     });
   </script>
 
-  <script>
-    document.getElementById('loadMoreMemory').addEventListener('click', function() {
-        var additionalContent = document.querySelector('.additional-content2');
-        if (additionalContent.style.display === 'none') {
-            additionalContent.style.display = 'block';
-        } 
-    });
-  </script>
+<script>
+  document.getElementById('loadMoreMemory').addEventListener('click', function() {
+      var additionalContent = document.querySelector('.additional-content2');
+      if (additionalContent.style.display === 'none') {
+          additionalContent.style.display = 'block';
+          this.textContent = 'Fold';
+      } else {
+          additionalContent.style.display = 'none';
+          this.textContent = 'Unfold';
+      }
+  });
+</script>
 
   <div class="container">
     <footer class="site-footer">
