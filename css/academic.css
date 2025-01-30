@@ -677,7 +677,7 @@ pre code {
   }
   
   .news-list li {
-    margin-bottom: 0.75em; /* Optional spacing between entries */
+    margin-bottom: 0.5em; /* Optional spacing between entries */
   }
   
   .news-date {
