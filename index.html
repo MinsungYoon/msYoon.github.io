@@ -189,14 +189,6 @@
             My research interest spans the following keywords: Reinforcement learning, Embodied AI, 3D Vision, Deep learning, Robotics, Motion Generation/Planning, Task and Motion Planning, Agile and Robust Control, Navigation, Graphics, etc.
             While my interests may appear broad, I am continuously drawn to exploring new research domains and connecting disparate fields. 
             I hold a belief that all research fields eventually converge into robotics with the goal of enhancing quality of human-being life.
-            <!-- <a style="color:rgb(98, 0, 255)">I am currently dedicated to advancing constraint-satisfying motion generation and enhancing the safety of real-world robot deployment.</a> -->
-            <!-- I am a Ph.D. student in <a href="https://sgvr.kaist.ac.kr">Scalable Graphics, Vision, and Robotics (SGVR) Lab</a> 
-            at <a href="https://kaist.ac.kr">Korea Advanced Institute of Science and Technology (KAIST)</a>, advised by Prof. <a href="https://sgvr.kaist.ac.kr/~sungeui/">Sung-Eui Yoon</a>.
-            -TBU- -->
-            <!-- I received my B.S. degree in Information & Communication Engineering from Inha University in 2019 and M.S. degree in Computing Science from the KAIST.  -->
-            <!-- My research interest lies on adversarial attack and defense in computer vision applications.
-            I focus on investigating the vulnerability of deep neural networks via adversarial attack
-            and designing adversarial defense techniques that can ensure robust deep model inferences under such threat.  -->
           </p>
 
 
@@ -255,7 +247,7 @@
   </section>
   
   
-  <section id="news" class="home-section wg-papers   " style="padding: 20px 0 20px 0;">
+  <!-- <section id="news" class="home-section wg-papers   " style="padding: 20px 0 20px 0;">
     <div class="container">
 
       <div class="row">
@@ -280,8 +272,55 @@
         </div>
       </div>
     </div>
+  </section> -->
+  <section id="news" class="home-section wg-papers" style="padding: 20px 0 20px 0;"></section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1>News</h1>
+          <ul id="news-list">
+            <li>[Jan. 25] <a style="color:rgb(255, 42, 42)">One paper is accepted to ICRA 2025</a>.</li>
+            <li>[Jul. 24] <a style="color:rgb(255, 42, 42)">One paper is accepted to IROS 2024</a>.</li>
+            <li>[Jun. 24] I proceeded the tutorial on "Advanced Motion Generation Techniques: Sampling-Based to Reinforcement Learning" at KCC 2024. [<a href="https://www.kiise.or.kr/conference/main/getContent.do?CC=KCC&CS=2024&PARENT_ID=011500&content_no=2003">Link</a>]</li>
+            <li>[Jun. 24] One paper is accepted to the Off-Road Autonomy Workshop at IV 2024.</li>
+            <li>[May 24] One paper is accepted to the Agile Robotics Workshop at ICRA 2024.</li>
+            
+            <li class="hidden">[Jul. 23] Our research is selected as one of the <a href="https://sgvr.kaist.ac.kr/news/2023/kaist-annual-rd-report/">KAIST 2023 Research Highlights</a>.</li>
+            <li class="hidden">[Jun. 23] Our research is presented in <a href="https://researchnews.kaist.ac.kr/researchnews/html/news/?mode=V&mng_no=29730&skey=&sval=&list_s_date=&list_e_date=&GotoPage=1">KAIST Research News</a>, <a href="https://cs.kaist.ac.kr/board/view?bbs_id=news&bbs_sn=10778&page=1&skey=subject&svalue=&menu=83">CS Department News</a>, and <a href="https://kaistalumni.com/post/1781">KAIST Alumni News</a>.</li>
+            <li class="hidden">[May 23] I received an <a style="color:rgb(255, 42, 42)">Outstanding Planning Paper Award</a> at ICRA 2023. [<a href="https://www.icra2023.org/awards-finalists">Link</a>]</li>
+            <li class="hidden">[May 23] <a style="color:rgb(255, 42, 42)">Two papers are accepted to ICRA 2023</a>.</li>
+            <li class="hidden">[Feb. 23] I gave an invited talk with the ICRA 2022 work at <a style="color:rgb(121, 66, 250)">Flagship Conference / Journal Session</a> of KRoC 2023. [<a href="https://kros.org/Conference/ConferenceView.asp?AC=0&CODE=CC20220802&CpPage=147#CONF">Link</a>]</li>
+            <li class="hidden">[Aug. 22] One paper is accepted to RO-MAN 2022 Workshop on Machine Learning for HRI.</li>
+            <li class="hidden">[Jun. 22] Our research is presented in <a href="https://cs.kaist.ac.kr/board/view?bbs_id=research&bbs_sn=10305&page=1&skey=subject&svalue=&menu=258">Research Highlights of the Department of Computing Science (CS) at KAIST</a>.</li>
+            <li class="hidden">[May 22] I received an <a style="color:rgb(255, 42, 42)">Outstanding Navigation Paper Finalist Award</a> at ICRA 2022. [<a href="https://www.icra2022.org/program/awards">Link</a>]</li>
+            <li class="hidden">[May 22] <a style="color:rgb(255, 42, 42)">One paper is accepted to ICRA 2022.</a></li>
+          </ul>
+          
+          <button id="toggle-btn" onclick="toggleNews()">더보기</button>
+        </div>
+      </div>
+    </div>
   </section>
 
+  <script>
+    function toggleNews() {
+      // 모든 hidden 클래스가 적용된 요소를 찾습니다.
+      const hiddenItems = document.querySelectorAll('#news-list .hidden');
+      const toggleBtn = document.getElementById('toggle-btn');
+      
+      // 현재 hidden 상태인지 아닌지를 확인하기 위한 변수
+      let isHidden = hiddenItems[0].style.display === '' || hiddenItems[0].style.display === 'none';
+
+      // hidden 상태면 display를 'list-item'으로 바꿔서 보이게 하고,
+      // 숨겨진 상태가 아니면 다시 'none'으로 바꿔서 숨깁니다.
+      hiddenItems.forEach(item => {
+        item.style.display = isHidden ? 'list-item' : 'none';
+      });
+
+      // 버튼 텍스트를 상황에 맞게 변경
+      toggleBtn.textContent = isHidden ? '접기' : '더보기';
+    }
+  </script>
 
   <section id="papers" class="home-section wg-blank   " style="padding: 20px 0 20px 0;">
     <div class="container">
@@ -442,16 +481,6 @@
         <div class="col-lg-12">
           <h1>Education &amp; Awards</h1>
           <ul>
-            <!-- <li style="line-height:150%"><b>Paper Award, 34th Workshop on Image Processing and Image Understanding (IPIU), 2022</b></li>  
-            - <i>Developed an adversarially robust pooling operation that can replace various downsampling operations of CNN.</i><br>
-            - <i>적대적 공격에 강인한 피처 신뢰도 기반 다운샘플링. In IPIU, 2022</i>
-            <li><b>Best Teaching Assistant Award, School of Computing, KAIST, 2021</b></li>  
-            - <i>Worked as a teaching assistant for CS206: Data Structure.</i>
-            <li><b>Grand Prix (1st place), Undergraduate Research Program, KAIST, 2021</b></li>  
-            - <i>Developed a highly transferable black-box adversarial attack based on diverse image attention disruption.</i><br>
-            - <i>Diverse Generative Perturbations on Attention Space for Transferable Adversarial Attacks. In ICIP, 2022</i>
-            <li><b>National Government Fellowship, South Korea Government, 2016 - Present</b></li>   -->
-            
             <h3>Ph.D. in Computer Science, KAIST</h3>
             <li>Total GPA: 4.1/4.3 (undergoing)</li>
             <li>Outstanding Planning Paper Award, ICRA 2023</li>
