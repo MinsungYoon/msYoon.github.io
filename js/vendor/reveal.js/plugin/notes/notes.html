@@ -11,24 +11,20 @@
       font-size: 18px;
     }
     
-    /* Hide items by default */
-    .hidden {
-      display: none;
+    .news-list li {
+      display: flex;          /* Put date + text on a single horizontal line */
+      align-items: flex-start; /* Align text at the top, if date wraps */
+      margin-bottom: 0.5em;
     }
-    /* Fancy, trendy button styling */
-    #toggle-btn {
-      padding: 12px 24px;
-      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-      color: #fff;
-      font-weight: 600;
-      font-family: 'Helvetica Neue', Arial, sans-serif;
-      border: none;
-      border-radius: 30px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      outline: none; /* Remove focus outline in some browsers */
+
+    .news-date {
+      /* Fixed width large enough to accommodate [MMM. DD] */
+      display: inline-block;
+      width: 70px;
+      font-weight: bold;
+      margin-right: 8px;
     }
-    
+        
     /* Hover effect */
     #toggle-btn:hover {
       transform: scale(1.05);
