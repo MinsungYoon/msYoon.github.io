@@ -688,21 +688,26 @@ pre code {
     margin-right: 5px;    /* Space after date */
   }
 
+/* Badge styling */
 .project-badge {
-  display: inline-block !important;        /* Force inline-block */
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%) !important;
-  color: #fff !important;                  /* Override default link colors */
-  text-decoration: none !important;        /* Remove underlines, etc. */
-  border-radius: 12px !important;
-  padding: 5px 12px !important;
-  font-weight: 600 !important;
-  transition: background 0.3s ease !important;
+display: inline-block; /* Allows padding and width */
+text-decoration: none; /* Remove underline for links */
+color: #fff;          /* Text color */
+background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+padding: 8px 16px;    /* Adjust for badge size */
+border-radius: 15px;  /* Rounded edges */
+font-weight: 600;     /* Bold text */
+font-family: Arial, sans-serif;
+transition: background 0.3s ease;
 }
+
 .project-badge:hover {
-  background: linear-gradient(135deg, #fc0fc0 0%, #fb6464 100%) !important;
-  color: #fff !important;
-  text-decoration: none !important;
+background: linear-gradient(135deg, #fc0fc0 0%, #fb6464 100%);
+text-decoration: none; /* Keep the link text clean on hover */
 }
+
+
+
 
 .col-1,
 .col-2,
