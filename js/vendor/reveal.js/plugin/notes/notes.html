@@ -12,28 +12,23 @@
     }
 
     .news-list {
-      list-style: none; 
+      list-style: none;
       padding: 0;
       margin: 0;
     }
 
     .news-list li {
-      display: table;
-      width: 100%;
-      table-layout: fixed;
-      margin-bottom: 0.5em;
-    }
-
-    .news-list li > span {
-      display: table-cell;
-      vertical-align: top;
+      display: flex;            /* Put date & text side by side */
+      align-items: flex-start;  /* Top-align if the text wraps to multiple lines */
+      margin-bottom: 0.5em;     /* Spacing between items */
     }
 
     .news-date {
-      width: 70px; 
-      font-weight: bold;
+      width: 70px;              /* Or however wide you want the date column */
+      font-weight: bold;        /* Make the date stand out */
+      margin-right: 8px;        /* Space between date and text */
     }
-    
+
     /* Hover effect */
     #toggle-btn:hover {
       transform: scale(1.05);
