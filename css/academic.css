@@ -695,9 +695,9 @@ pre code {
     color: #fff;
     background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
     padding: 4px 8px;       /* Reduced padding for a smaller box */
-    border-radius: 3px;     /* Keep or adjust for more/less rounded edges */
+    border-radius: 8px;     /* Keep or adjust for more/less rounded edges */
     font-weight: 600;
-    font-size: 0.4rem;     /* Slightly smaller text (roughly 13.6px if base is 16px) */
+    font-size: 0.85rem;     /* Slightly smaller text (roughly 13.6px if base is 16px) */
     font-family: Arial, sans-serif;
     transition: background 0.3s ease;
   }
