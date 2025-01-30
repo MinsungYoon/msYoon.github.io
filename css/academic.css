@@ -687,6 +687,22 @@ pre code {
     font-weight: bold;    /* Optional styling */
     margin-right: 5px;    /* Space after date */
   }
+  
+  .project-badge {
+    display: inline-block; 
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 12px;
+    padding: 5px 12px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+  
+  .project-badge:hover {
+    background: linear-gradient(135deg, #fc0fc0 0%, #fb6464 100%);
+    /* You can tweak hover colors as you like */
+  }
 
 .col-1,
 .col-2,
