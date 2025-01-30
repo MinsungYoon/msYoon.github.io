@@ -12,21 +12,20 @@
     }
 
     .news-list {
-      list-style: none;
+      list-style: none;    /* Remove default bullets */
       padding: 0;
       margin: 0;
     }
 
     .news-list li {
-      display: flex;            /* Put date & text side by side */
-      align-items: flex-start;  /* Top-align if the text wraps to multiple lines */
-      margin-bottom: 0.5em;     /* Spacing between items */
+      margin-bottom: 0.75em; /* Optional spacing between entries */
     }
 
     .news-date {
-      width: 70px;              /* Or however wide you want the date column */
-      font-weight: bold;        /* Make the date stand out */
-      margin-right: 8px;        /* Space between date and text */
+      display: inline-block; 
+      width: 65px;           /* Enough width for [MMM. DD] format */
+      font-weight: bold;
+      margin-right: 8px;     /* Small gap between date and text */
     }
 
     /* Hover effect */
