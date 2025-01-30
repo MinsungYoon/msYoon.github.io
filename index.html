@@ -830,9 +830,8 @@
     document.getElementById('loadMoreNews').addEventListener('click', function() {
         var additionalContent = document.querySelector('.additional-content');
         if (additionalContent.style.display === 'none') {
-          additionalContent.remove();
-        // Optionally, remove this button as well if there's nothing left to show
-        this.remove();
+          additionalContent.style.display = 'block';
+          this.textContent = 'End';
         }
     });
   </script>
