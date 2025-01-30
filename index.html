@@ -296,7 +296,8 @@
             <li class="hidden">[May 22] <a style="color:rgb(255, 42, 42)">One paper is accepted to ICRA 2022.</a></li>
           </ul>
           
-          <button id="toggle-btn" onclick="toggleNews()">더보기</button>
+          <!-- Fancy "Show more" button -->
+          <button id="toggle-btn" onclick="toggleNews()">Show more</button>
         </div>
       </div>
     </div>
@@ -304,21 +305,16 @@
 
   <script>
     function toggleNews() {
-      // 모든 hidden 클래스가 적용된 요소를 찾습니다.
       const hiddenItems = document.querySelectorAll('#news-list .hidden');
       const toggleBtn = document.getElementById('toggle-btn');
       
-      // 현재 hidden 상태인지 아닌지를 확인하기 위한 변수
       let isHidden = hiddenItems[0].style.display === '' || hiddenItems[0].style.display === 'none';
 
-      // hidden 상태면 display를 'list-item'으로 바꿔서 보이게 하고,
-      // 숨겨진 상태가 아니면 다시 'none'으로 바꿔서 숨깁니다.
       hiddenItems.forEach(item => {
         item.style.display = isHidden ? 'list-item' : 'none';
       });
 
-      // 버튼 텍스트를 상황에 맞게 변경
-      toggleBtn.textContent = isHidden ? '접기' : '더보기';
+      toggleBtn.textContent = isHidden ? 'Show less' : 'Show more';
     }
   </script>
 

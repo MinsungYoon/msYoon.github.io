@@ -10,6 +10,39 @@
       font-family: Helvetica;
       font-size: 18px;
     }
+    
+    /* Hide items by default */
+    .hidden {
+      display: none;
+    }
+    /* Fancy, trendy button styling */
+    #toggle-btn {
+      padding: 12px 24px;
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+      color: #fff;
+      font-weight: 600;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      outline: none; /* Remove focus outline in some browsers */
+    }
+    
+    /* Hover effect */
+    #toggle-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(245, 87, 108, 0.3);
+    }
+    
+    /* Optional: active/focus states, for completeness */
+    #toggle-btn:active {
+      transform: scale(1.02);
+    }
+    #toggle-btn:focus {
+      outline: 2px solid rgba(255, 255, 255, 0.7);
+      outline-offset: -4px;
+    }
 
     #current-slide,
     #upcoming-slide,
