@@ -688,16 +688,18 @@ pre code {
     margin-right: 5px;    /* Space after date */
   }
 
-/* Badge styling */
-.project-badge {
+  .project-badge {
     display: inline-block; 
     text-decoration: none; 
     color: #fff;
     background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-    padding: 4px 8px;       /* Reduced padding for a smaller box */
-    border-radius: 8px;     /* Keep or adjust for more/less rounded edges */
+    
+    /* Smaller padding and font */
+    padding: 2px 6px;      /* Less space around text */
+    font-size: 0.75rem;    /* Smaller text (approx 12px if base is 16px) */
+    
+    border-radius: 8px;
     font-weight: 600;
-    font-size: 0.85rem;     /* Slightly smaller text (roughly 13.6px if base is 16px) */
     font-family: Arial, sans-serif;
     transition: background 0.3s ease;
   }
@@ -706,7 +708,6 @@ pre code {
     background: linear-gradient(135deg, #fc0fc0 0%, #fb6464 100%);
     text-decoration: none;
   }
-
 
 
 .col-1,
