@@ -690,22 +690,22 @@ pre code {
 
 /* Badge styling */
 .project-badge {
-display: inline-block; /* Allows padding and width */
-text-decoration: none; /* Remove underline for links */
-color: #fff;          /* Text color */
-background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-padding: 8px 16px;    /* Adjust for badge size */
-border-radius: 15px;  /* Rounded edges */
-font-weight: 600;     /* Bold text */
-font-family: Arial, sans-serif;
-transition: background 0.3s ease;
-}
-
-.project-badge:hover {
-background: linear-gradient(135deg, #fc0fc0 0%, #fb6464 100%);
-text-decoration: none; /* Keep the link text clean on hover */
-}
-
+    display: inline-block; 
+    text-decoration: none; 
+    color: #fff;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    padding: 4px 8px;       /* Reduced padding for a smaller box */
+    border-radius: 8px;     /* Keep or adjust for more/less rounded edges */
+    font-weight: 600;
+    font-size: 0.85rem;     /* Slightly smaller text (roughly 13.6px if base is 16px) */
+    font-family: Arial, sans-serif;
+    transition: background 0.3s ease;
+  }
+  
+  .project-badge:hover {
+    background: linear-gradient(135deg, #fc0fc0 0%, #fb6464 100%);
+    text-decoration: none;
+  }
 
 
 
