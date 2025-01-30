@@ -681,11 +681,11 @@ pre code {
   }
   
   .news-date {
-    width: 65px;          /* Ensure enough space for your date format */
+    width: 60px;          /* Ensure enough space for your date format */
     display: inline-block; 
     text-align: right;   /* Center the text horizontally */
     font-weight: bold;    /* Optional styling */
-    margin-right: 5px;    /* Space after date */
+    margin-right: 10px;    /* Space after date */
   }
 
   .project-badge {
