@@ -694,7 +694,7 @@ pre code {
     text-decoration: none; 
     color: #fff;
     background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-    padding: 2px 3px;       /* Reduced padding for a smaller box */
+    padding: 4px 8px;       /* Reduced padding for a smaller box */
     border-radius: 3px;     /* Keep or adjust for more/less rounded edges */
     font-weight: 600;
     font-size: 0.4rem;     /* Slightly smaller text (roughly 13.6px if base is 16px) */
