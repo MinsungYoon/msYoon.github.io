@@ -836,18 +836,11 @@
     });
   </script>
 
-<script>
-  document.getElementById('loadMoreMemory').addEventListener('click', function() {
-      var additionalContent = document.querySelector('.additional-content2');
-      if (additionalContent.style.display === 'none') {
-          additionalContent.style.display = 'block';
-          this.textContent = 'Fold';
-      } else {
-          additionalContent.style.display = 'none';
-          this.textContent = 'Unfold';
-      }
-  });
-</script>
+  <script>
+    document.getElementById('loadMoreMemory').addEventListener('click', function() {
+        var additionalContent = document.querySelector('.additional-content2');
+    });
+  </script>
 
   <div class="container">
     <footer class="site-footer">
