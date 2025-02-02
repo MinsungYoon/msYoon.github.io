@@ -725,6 +725,39 @@
 
   </section>
 
+
+  <!-- 전체 화면 오버레이 -->
+  <div id="overlay">
+    <img src="" alt="확대 이미지" />
+  </div>
+
+  <!-- Bootstrap JS (옵션) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- 오버레이 열기/닫기 스크립트 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const overlay = document.getElementById("overlay");
+      const overlayImg = overlay.querySelector("img");
+
+      // clickable 클래스를 가진 모든 이미지 선택
+      const images = document.querySelectorAll("img.clickable");
+
+      // 각 이미지 클릭 시 오버레이 활성화, 클릭한 이미지 경로 삽입
+      images.forEach((img) => {
+        img.addEventListener("click", function() {
+          overlayImg.src = this.src;
+          overlay.classList.add("active");
+        });
+      });
+
+      // 오버레이 영역(또는 이미지)을 클릭하면 닫기
+      overlay.addEventListener("click", function() {
+        overlay.classList.remove("active");
+      });
+    });
+  </script>
+
   <!-- <section id="awards" class="home-section wg-papers   " style="padding: 20px 0 20px 0;">
     <div class="container">
       <div class="row">
