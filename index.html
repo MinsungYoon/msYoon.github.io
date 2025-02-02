@@ -43,19 +43,54 @@
 
 
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "/?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  },
-  "url": "/"
-}
-</script>
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "url": "/"
+    }
+  </script>
   <title>Min-Sung Yoon</title>
+  
+  <style>
+    /* 오버레이(전체 화면 어둡게) */
+    #overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8); /* 어두운 배경 */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;               /* 초기에는 투명하게 해서 보이지 않음 */
+      pointer-events: none;     /* 클릭 불가능 상태 */
+      transition: opacity 0.3s ease-in-out; /* 전환 애니메이션 */
+      z-index: 9999;            /* 최상단 표시 */
+    }
+    #overlay.active {
+      opacity: 1;               /* 오버레이가 활성화되면 불투명(어두운 배경) */
+      pointer-events: auto;     /* 클릭 가능 상태 */
+    }
 
+    /* 오버레이 내부에 보여줄 큰 이미지 */
+    #overlay img {
+      max-width: 90%;
+      max-height: 90%;
+      border: 2px solid #fff;
+      border-radius: 10px;
+    }
+
+    /* 이미지를 클릭할 수 있게 마우스 포인터 표시 */
+    .clickable {
+      cursor: pointer;
+    }
+  </style>
 </head>
 
 <body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main">
