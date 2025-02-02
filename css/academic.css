@@ -685,7 +685,7 @@ pre code {
     display: inline-block; 
     text-align: right;   /* Center the text horizontally */
     font-weight: bold;    /* Optional styling */
-    margin-right: 10px;    /* Space after date */
+    margin-right: 15px;    /* Space after date */
   }
 
   .project-badge {
